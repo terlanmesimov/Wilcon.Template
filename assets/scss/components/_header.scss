@@ -119,6 +119,29 @@ header{
             }
         }
     }
+    .menu{
+        display: none;
+        padding: 10px 0;
+        background-color: $dark;
+        .container{
+            .row{
+                align-items: center;
+                a{
+                    padding: 4px 0 4px 12px;
+                    span{
+                        align-items: center;
+                        i{
+                            color: #fff;
+                        }
+                        p{
+                            padding: 0 0 0 4px;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
     .navbar{
         background-color: $dark;
         width: 1140px;
@@ -168,6 +191,7 @@ header{
     }
 }
 
+
 @media ( max-width: 1200px ){
     header{
         .container{
@@ -183,6 +207,9 @@ header{
         .container{
             max-width: 720px;
         }
+        .menu{
+            display: block;
+        }
         .navbar{
             max-width: 720px;
             position: static;
@@ -191,6 +218,87 @@ header{
             }
             .register{
                 display: none;
+            }
+        }
+    }
+}
+@media ( max-width: 768px){
+    header{
+        .top{
+            .container{
+                max-width: 540px;
+                .row{
+                    display: block;
+                    .left{
+                        width: 100%;
+                        padding: 0 15px;
+                        margin: 0 0 8px;
+                    }
+                    .right{
+                        text-align: center;
+                        display: block;
+                        border-radius: 30px;
+                    }
+                }
+            }
+        }
+        .bottom{
+            .container{
+                max-width: 540px;
+                .row{
+                    padding: 0 15px;
+                    flex-direction: column;
+                    a{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .menu{
+            .container{
+                max-width: 540px;
+            }
+        }
+    }
+}
+@media ( max-width: 576px){
+    header{
+        .top{
+            .container{
+                max-width: 100%;
+                .row{
+                    display: block;
+                    .left{
+                        flex-direction: column;
+                        width: 100%;
+                        padding: 0 15px;
+                        margin: 0 0 8px;
+                        .mail{
+                            margin: 0 0 8px;
+                        }
+                    }
+                    .right{
+                        text-align: center;
+                        display: block;
+                        border-radius: 30px;
+                    }
+                }
+            }
+        }
+        .bottom{
+            .container{
+                max-width: 100%;
+                .row{
+                    flex-direction: column;
+                    a{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .menu{
+            .container{
+                max-width: 540px;
             }
         }
     }

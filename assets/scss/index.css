@@ -10,6 +10,7 @@
 
 .container {
   max-width: 1140px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
@@ -187,6 +188,27 @@ header .bottom .container .row a .map .text p {
   font-weight: 300;
   line-height: 1.8;
 }
+header .menu {
+  display: none;
+  padding: 10px 0;
+  background-color: #040e26;
+}
+header .menu .container .row {
+  align-items: center;
+}
+header .menu .container .row a {
+  padding: 4px 0 4px 12px;
+}
+header .menu .container .row a span {
+  align-items: center;
+}
+header .menu .container .row a span i {
+  color: #fff;
+}
+header .menu .container .row a span p {
+  padding: 0 0 0 4px;
+  color: #fff;
+}
 header .navbar {
   background-color: #040e26;
   width: 1140px;
@@ -241,6 +263,9 @@ header .navbar .register div a {
   header .container {
     max-width: 720px;
   }
+  header .menu {
+    display: block;
+  }
   header .navbar {
     max-width: 720px;
     position: static;
@@ -250,5 +275,70 @@ header .navbar .register div a {
   }
   header .navbar .register {
     display: none;
+  }
+}
+@media (max-width: 768px) {
+  header .top .container {
+    max-width: 540px;
+  }
+  header .top .container .row {
+    display: block;
+  }
+  header .top .container .row .left {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 0 8px;
+  }
+  header .top .container .row .right {
+    text-align: center;
+    display: block;
+    border-radius: 30px;
+  }
+  header .bottom .container {
+    max-width: 540px;
+  }
+  header .bottom .container .row {
+    padding: 0 15px;
+    flex-direction: column;
+  }
+  header .bottom .container .row a {
+    width: 100%;
+  }
+  header .menu .container {
+    max-width: 540px;
+  }
+}
+@media (max-width: 576px) {
+  header .top .container {
+    max-width: 100%;
+  }
+  header .top .container .row {
+    display: block;
+  }
+  header .top .container .row .left {
+    flex-direction: column;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 0 8px;
+  }
+  header .top .container .row .left .mail {
+    margin: 0 0 8px;
+  }
+  header .top .container .row .right {
+    text-align: center;
+    display: block;
+    border-radius: 30px;
+  }
+  header .bottom .container {
+    max-width: 100%;
+  }
+  header .bottom .container .row {
+    flex-direction: column;
+  }
+  header .bottom .container .row a {
+    width: 100%;
+  }
+  header .menu .container {
+    max-width: 540px;
   }
 }/*# sourceMappingURL=index.css.map */
