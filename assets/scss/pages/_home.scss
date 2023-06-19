@@ -149,11 +149,29 @@ main{
                 .container{
                     max-width: 520px;
                     .main{
-                        .buttons{
-                            display: flex;
-                            flex-direction: column;
-                            text-align: center;
-                            gap: 10px;
+                        .box{
+                            width: 100%;
+                            .buttons{
+                                display: block;
+                                a{
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                    .row{
+                        .content{
+                            padding: 20px;
+                            .icon{
+                                span{
+                                    height: 50px;
+                                    width: 50px;
+                                    img{
+                                        height: 40px;
+                                        width: 40px;
+                                    }
+                                }
+                            }
                         }
                     }
                 }

@@ -468,10 +468,24 @@ main .hero .image .container .row .orange .icon span {
   main .hero .image .container {
     max-width: 520px;
   }
-  main .hero .image .container .main .buttons {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 10px;
+  main .hero .image .container .main .box {
+    width: 100%;
+  }
+  main .hero .image .container .main .box .buttons {
+    display: block;
+  }
+  main .hero .image .container .main .box .buttons a {
+    font-size: 14px;
+  }
+  main .hero .image .container .row .content {
+    padding: 20px;
+  }
+  main .hero .image .container .row .content .icon span {
+    height: 50px;
+    width: 50px;
+  }
+  main .hero .image .container .row .content .icon span img {
+    height: 40px;
+    width: 40px;
   }
 }/*# sourceMappingURL=index.css.map */
