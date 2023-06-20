@@ -97,7 +97,7 @@ header .top .container .row .left {
 header .top .container .row .left .mail span {
   color: #999;
 }
-header .top .container .row .left .social span {
+header .top .container .row .left .social span a {
   margin: 0 2px;
   height: 35px;
   width: 35px;
@@ -105,10 +105,10 @@ header .top .container .row .left .social span {
   background: rgba(255, 255, 255, 0.1019607843);
   transition: 0.2s ease;
 }
-header .top .container .row .left .social span:hover {
+header .top .container .row .left .social span a:hover {
   background-color: #fc5e28;
 }
-header .top .container .row .left .social span:hover i {
+header .top .container .row .left .social span a:hover i {
   color: #fff;
 }
 header .top .container .row .right {
@@ -364,9 +364,6 @@ main .hero .image .container {
 main .hero .image .container .main {
   align-items: center;
   min-height: 100vh;
-}
-main .hero .image .container .main .box {
-  animation-name: fadeInUp 0.5s;
 }
 main .hero .image .container .main .box h2 {
   font-size: 60px;
