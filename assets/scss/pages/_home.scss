@@ -7,7 +7,7 @@ main{
         background-repeat: no-repeat;
         width: 100%;
         height: 100%;
-        .image{
+        .overlay{
             min-height: 100%;
             width: 100%;
             background-color: rgba($color: $dark, $alpha: 0.5);
@@ -53,64 +53,60 @@ main{
                         }
                     }
                 }
-                .row{
-                    padding: 0 15px;
-                    width: 100%;
-                    position: absolute;
-                    top: calc( 100% - 100px);
-                    left: 50%;
-                    transform: translateX(-50%);
-                    .content{
-                        background-color: $dark;
-                        padding: 30px;
-                        position: relative;
-                        overflow: hidden;
-                        ::before{
-                            position: absolute;
-                            top: 0;
-                            right: -30px;
-                            bottom: 0;
-                            content: '';
-                            width: 50%;
-                            background: rgba(255, 255, 255, 0.022);
-                            transform: matrix(1.3, 0, -0.3, 1, 0, 0);
-                        }
-                        .icon{
-                            span{
-                                height: 80px;
-                                width: 80px;
-                                background-color: $orange;
-                                border-radius: 50%;
-                                img{
-                                    height: 50px;
-                                    width: 50px;
-                                }
-                            }
-                        }
-                        .text{
-                            padding: 0 0 0 24px;
-                            h3{
-                                color: #fff;
-                                font-size: 24px;
-                                font-weight: 500;
-                                line-height: 1.5;
-                                margin: 0 0 16px;
-                            }
-                            p{
-                                color: $p-light;
-                                line-height: 1.8;
-                                margin: 0 0 16px;
-                            }
-                        }
+            }
+        }
+    }
+    .cards {
+        position: relative;
+        margin-top: -70px;
+        .content {
+            background-color: $dark;
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
+            ::before {
+                position: absolute;
+                top: 0;
+                right: -30px;
+                bottom: 0;
+                content: "";
+                width: 50%;
+                background: rgba(255, 255, 255, 0.022);
+                transform: matrix(1.3, 0, -0.3, 1, 0, 0);
+            }
+            .icon {
+                span {
+                    height: 80px;
+                    width: 80px;
+                    background-color: $orange;
+                    border-radius: 50%;
+                    img {
+                        height: 50px;
+                        width: 50px;
                     }
-                    .orange{
-                        background-color: $orange;
-                        .icon{
-                            span{
-                                background-color: #fff;
-                            }
-                        }
-                    }
+                }
+            }
+            .text {
+                padding: 0 0 0 24px;
+                h3 {
+                    color: #fff;
+                    font-size: 24px;
+                    font-weight: 500;
+                    line-height: 1.5;
+                    margin: 0 0 16px;
+                }
+                p {
+                    color: $p-light;
+                    line-height: 1.8;
+                    margin: 0 0 16px;
+                }
+            }
+        }
+        .orange {
+            background-color: $orange;
+            .icon {
+                span {
+                    background-color: #fff;
                 }
             }
         }
@@ -120,10 +116,15 @@ main{
 @media ( max-width: 1200px ){
     main{
         .hero{
-            .image{
+            .overlay{
                 .container{
                     max-width: 960px;
                 }
+            }
+        }
+        .cards{
+            .container{
+                max-width: 960px;
             }
         }
     }
@@ -131,7 +132,7 @@ main{
 @media ( max-width: 992px ){
     main{
         .hero{
-            .image{
+            .overlay{
                 .container{
                     max-width: 720px;
                     .main{
@@ -141,12 +142,17 @@ main{
                             }
                         }
                     }
-                    .row{
-                        flex-direction: column;
-                        .content{
-                            width: 100%;
-                            transform: translateY( 100px );
-                        }
+                }
+            }
+        }
+        .cards{
+            margin: 0;
+            .container{
+                max-width: 720px;
+                .row{
+                    flex-direction: column;
+                    .content{
+                        width: 100%;
                     }
                 }
             }
@@ -156,7 +162,7 @@ main{
 @media ( max-width: 768px){
     main{
         .hero{
-            .image{
+            .overlay{
                 .container{
                     max-width: 520px;
                     .main{
@@ -170,17 +176,22 @@ main{
                             }
                         }
                     }
-                    .row{
-                        .content{
-                            padding: 20px;
-                            .icon{
-                                span{
-                                    height: 50px;
-                                    width: 50px;
-                                    img{
-                                        height: 40px;
-                                        width: 40px;
-                                    }
+                }
+            }
+        }
+        .cards{
+            .container{
+                max-width: 520px;
+                .row{
+                    .content{
+                        padding: 20px;
+                        .icon{
+                            span{
+                                height: 50px;
+                                width: 50px;
+                                img{
+                                    height: 40px;
+                                    width: 40px;
                                 }
                             }
                         }

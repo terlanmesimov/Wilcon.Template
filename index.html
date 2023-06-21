@@ -4,10 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- animation -->
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- animation -->
     <!-- icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -16,6 +13,7 @@
     <title>Wilcon</title>
 </head>
 <body>
+    <!-- header -->
     <header id="header">
         <div class="top">
             <div class="container">
@@ -150,12 +148,14 @@
             </div>
         </nav>
     </header>
+    <!-- header -->
     <main>
+        <!-- hero  -->
         <section class="hero">
-            <div class="image">
+            <div class="overlay">
                 <div class="container">
                     <div class="main d-flex">
-                        <div class="box col-6">
+                        <div data-aos="fade-up" class="box col-6">
                             <h2>
                                 WE BUILD
                                 GREAT PROJECTS
@@ -173,44 +173,61 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row d-flex">
-                        <div class="content d-flex">
-                            <div class="icon">
-                                <span class="center">
-                                    <img src="./assets/images/engineer (1).png" alt="">
-                                </span>
-                            </div>
-                            <div class="text">
-                                <h3>Quality Construction</h3>
-                                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                            </div>
-                        </div>
-                        <div class="content orange d-flex">
-                            <div class="icon">
-                                <span class="center">
-                                    <img src="./assets/images/engineer (1).png" alt="">
-                                </span>
-                            </div>
-                            <div class="text">
-                                <h3>Professional Liability</h3>
-                                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                            </div>
-                        </div>
-                        <div class="content d-flex">
-                            <div class="icon">
-                                <span class="center">
-                                    <img src="./assets/images/engineer (1).png" alt="">
-                                </span>
-                            </div>
-                            <div class="text">
-                                <h3>Dedicated To Or Clients</h3>
-                                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
+        <!-- hero -->
+        <!-- cards -->
+        <section class="cards">
+            <div class="container">
+                <div class="row d-flex">
+                <div data-aos="fade-up" class="content d-flex">
+                    <div class="icon">
+                        <span class="center">
+                            <img src="./assets/images/engineer (1).png" alt="" />
+                        </span>
+                    </div>
+                    <div class="text">
+                    <h3>Quality Construction</h3>
+                        <p>
+                            A small river named Duden flows by their place and supplies it
+                            with the necessary regelialia.
+                        </p>
+                    </div>
+                </div>
+                <div data-aos="fade-up" class="content orange d-flex">
+                    <div class="icon">
+                        <span class="center">
+                            <img src="./assets/images/engineer (1).png" alt="" />
+                        </span>
+                    </div>
+                    <div class="text">
+                        <h3>Professional Liability</h3>
+                        <p>
+                            A small river named Duden flows by their place and supplies it
+                            with the necessary regelialia.
+                        </p>
+                    </div>
+                </div>
+                <div data-aos="fade-up"  class="content d-flex">
+                    <div class="icon">
+                    <span class="center">
+                        <img src="./assets/images/engineer (1).png" alt="" />
+                    </span>
+                    </div>
+                    <div class="text">
+                        <h3>Dedicated To Or Clients</h3>
+                        <p>
+                            A small river named Duden flows by their place and supplies it
+                            with the necessary regelialia.
+                        </p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <!-- cards -->
+        <!-- blog about -->
         <section id="about" class="blog">
             <div class="container">
                 <div class="row d-flex">
@@ -220,7 +237,7 @@
                             <img src="./assets/images/crane.png" alt="">
                         </span>
                     </div>
-                    <div class="text col-6">
+                    <div data-aos="fade-up"  class="text col-6">
                         <span class="subheading">WELCOME TO WILCON</span>
                         <h2>Wilcon A Construction Company</h2>
                         <div class="icon d-flex">
@@ -238,6 +255,16 @@
                 </div>
             </div>
         </section>
+        <!-- blog about -->
+        <!-- intro about -->
+        <section id="about" class="intro">
+
+        </section>
+        <!-- intro about -->
     </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
