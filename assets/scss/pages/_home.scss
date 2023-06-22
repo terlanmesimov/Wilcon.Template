@@ -7,10 +7,10 @@ main{
         background-repeat: no-repeat;
         width: 100%;
         height: 100%;
-        .overlay{
-            min-height: 100%;
-            width: 100%;
-            background-color: rgba($color: $dark, $alpha: 0.5);
+            .overlay{
+                min-height: 100%;
+                width: 100%;
+                background-color: rgba($color: $dark, $alpha: 0.5);
             .container{
                 position: relative;
                 .main{

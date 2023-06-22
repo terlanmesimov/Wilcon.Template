@@ -1,0 +1,146 @@
+main{
+    .our-services{
+        padding: 120px 0;
+        position: relative;
+        .before{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 50%;
+            content: '';
+            background: #f3f5f6;
+            z-index: -1;
+        }
+        .container{
+            .title{
+                margin: 0 0 80px;
+                text-align: center;
+                span{
+                    font-size: 12px;
+                    margin: 0 0 5px;
+                    color: $orange;
+                    letter-spacing: 2px;
+                    font-weight: 600;
+                }
+                h2{
+                    line-height: 1.2;
+                    font-size: 40px;
+                    font-weight: 700;
+                    margin: 0 0 24px;
+                }
+            }
+            .row{
+                gap: 30px;
+                .card{
+                    z-index: 1;
+                    position: relative;
+                    padding: 20px;
+                    box-shadow: 0px 15px 46px -16px rgba(0, 0, 0, 0.11);
+                    background-color: #fff;
+                    &:hover .icon {
+                        background-color: $orange;
+                    }
+                    &:hover .btn{
+                        background-color: $orange;
+                    }
+                    .one{
+                        background: url(../images/services-1.jpg.webp);
+                    }
+                    .two{
+                        background: url(../images/services-2.jpg.webp);
+                    }
+                    .three{
+                        background: url(../images/services-3.jpg.webp);
+                    }
+                    .image{
+                        height: 220px;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center center;
+                    }
+                    .icon{
+                        margin: -45px auto 20px auto;
+                        height: 90px;
+                        width: 90px;
+                        border-radius: 50%;
+                        background: #fff;
+                        box-shadow: 0px 11px 32px -12px rgba(0, 0, 0, 0.28);
+                        transition: $hover;
+                        img{
+                            height: 50px;
+                            width: 50px;
+                        }
+                    }
+                    text-align: center;
+                    h2{
+                        font-weight: 500;
+                        font-size: 22px;
+                        line-height: 1.5;
+                        color: rgba(0, 0, 0, 0.9);
+                        margin: 0 0 8px;
+                    }
+                    p{
+                        font-size: 17px;
+                        line-height: 1.8;
+                        font-weight: 400;
+                        color: $p-gray;
+                        margin: 0 0 36px;
+                    }
+                    .btn{
+                        position: absolute;
+                        top: calc(100% - 20px);
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 70%;
+                        padding: 12px 10px;
+                        border-radius: 3px;
+                        background-color: $dark;
+                        transition: $hover;
+                        a{
+                            color: #fff;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 1.8;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    main{
+        .our-services{
+            .container{
+                max-width: 960px;
+            }
+        }
+    }
+}
+@media (max-width: 992px) {
+    main{
+        .our-services{
+            .container{
+                max-width: 720px;
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    main{
+        .our-services{
+            .container{
+                max-width: 540px;
+                .row{
+                    flex-direction: column;
+                    .card{
+                        width: 100%;
+                        margin: 0 0 40px;
+                    }
+                }
+            }
+        }
+    }
+}
