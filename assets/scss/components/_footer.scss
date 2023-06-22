@@ -1,0 +1,107 @@
+footer{
+    padding: 80px 0 0;
+    background-color: #030918;
+    .main{
+        gap: 30px;
+        padding: 0 0 70px;
+        .row{
+            gap: 30px;
+            p{
+                color: rgba(255, 255, 255, 0.5);
+                line-height: 1.8;
+            }
+            a{
+                color: rgba(255, 255, 255, 0.5);
+            }
+            .heading{
+                font-size: 16px;
+                font-weight: 500;
+                color: #fff;
+                margin-bottom: 40px;
+                letter-spacing: 2px;
+                margin: 0 0 40px;
+            }
+            .about{
+                p{
+                    margin-bottom: 0 0 16px;
+                }
+                .media{
+                    margin: 24px 0 0 ;
+                    gap: 15px;
+                    li{
+                        a{
+                            border-radius: 50%;
+                            height: 40px;
+                            width: 40px;
+                            background: #ffffff14;
+                            transition: $hover;
+                            &:hover{
+                                background-color: $orange;
+                            }
+                            i{
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+            .links{
+                div{
+                    .left{
+                        margin: 0 24px 0 0;
+                    }
+                    .right{
+                        margin: 0 0 0 48px;
+                    }
+                    ul{
+                        li{
+                            &:hover{
+                                p{
+                                    color: $orange;
+                                }
+                            }
+                            margin: 0 0 10px;
+                            p{
+                                display: inline;
+                                padding: 0 0 0 5px;
+                                transition: $hover;
+                            }
+                        }
+                    }
+                }
+            }
+            .services{
+                ul{
+                    li{
+                        &:hover{
+                            p{
+                                color: $orange;
+                            }
+                        }
+                        margin: 0 0 10px;
+                        p{
+                            display: inline;
+                            padding: 0 0 0 5px;
+                            transition: $hover;
+                        }
+                    }
+                }
+            }
+            .question{
+                ul{
+                    li{
+                        display: flex;
+                        margin: 0 0 10px;
+                        i{
+                            color: rgba(255, 255, 255, 0.5);
+                            line-height: 1.8;
+                        }
+                        p{
+                            padding: 0 0 0 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

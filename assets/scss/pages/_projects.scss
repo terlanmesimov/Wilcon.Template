@@ -19,6 +19,118 @@ main{
                     margin: 0 0 24px;
                 }
             }
+            .row{
+                gap: 30px;
+                .card{
+                    margin: 0 0 30px;
+                    &:hover .image{
+                        .icon{
+                            opacity: 1;
+                        }
+                    }
+                    &:hover .box{
+                        background-color: $orange;
+                        span{
+                            color: #fff;
+                        }
+                        h3{
+                            color: #fff;
+                        }
+                        p{
+                            color: #fff;
+                            i{
+                                color: #fff;
+                            }
+                        }
+                    }
+                    .image{
+                        height: 100%;
+                        position: relative;
+                        background: url(../images/project-1.jpg.webp);
+                        background-position: center center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        height: 240px;
+                        z-index: -1;
+                        .icon{
+                            opacity: 0;
+                            transition: $hover;
+                            position: absolute;
+                            top: 25%;
+                            left: 50%;
+                            transform: translateX( -50% );
+                            height: 70px;
+                            width: 70px;
+                            background-color: $orange;
+                            i{
+                                color: #fff;
+                            }
+                        }
+                    }
+                    .box{
+                        padding: 20px;
+                        background-color: #fff;
+                        box-shadow: 0px 15px 46px -16px rgba(0, 0, 0, 0.1);
+                        border-radius: 4px;
+                        width: 90%;
+                        margin: -75px auto 0 auto;
+                        transition: $hover;
+                        span{
+                            background: rgba(0, 0, 0, 0.07);
+                            padding: 5px 10px;
+                            color: $orange;
+                            font-size: 12px;
+                            display: inline-block;
+                            margin: 0 0 10px;
+                            font-weight: 700;
+                        }
+                        h3{
+                            font-size: 16px;
+                            font-weight: 700;
+                            line-height: 1.5;
+                            color: rgba(0, 0, 0, 0.9);
+                            margin:  0 0 8px;
+                        }
+                        p{
+                            color: $p-gray;
+                            font-size: 13px;
+                            line-height: 1.8;
+                            i{
+                                color: $orange;
+                                padding: 0 5px 0 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px){
+    .projects{
+        .container{
+            max-width: 960px;
+        }
+    }
+}
+@media (max-width: 992px){
+    .projects{
+        .container{
+            max-width: 720px;
+        }
+    }
+}
+@media (max-width: 768px){
+    .projects{
+        .container{
+            max-width: 540px;
+            .row{
+                flex-direction: column;
+                .card{
+                    width: 100%;
+                }
+            }
         }
     }
 }
