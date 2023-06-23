@@ -435,7 +435,109 @@ footer .main .row .question ul li i {
 footer .main .row .question ul li p {
   padding: 0 0 0 15px;
 }
+footer .bottom {
+  position: relative;
+  height: 100%;
+}
+footer .bottom .row {
+  position: relative;
+  height: 100px;
+  width: 50%;
+  background-color: #fc5e28;
+}
+footer .bottom .row::before {
+  position: absolute;
+  bottom: 0;
+  right: -99.5px;
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 100px 100px 0 0;
+  transform: rotate(-90deg);
+  border-color: #fc5e28 transparent transparent transparent;
+}
+footer .bottom .container {
+  z-index: 1;
+  width: 1140px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+footer .bottom .container .text {
+  width: 50%;
+}
+footer .bottom .container .text p {
+  color: rgba(255, 255, 255, 0.7019607843);
+}
 
+@media (max-width: 1200px) {
+  footer .container {
+    max-width: 960px;
+  }
+  footer .container .services {
+    width: 50%;
+  }
+  footer .container .services a {
+    white-space: nowrap;
+  }
+  footer .container .question {
+    width: 50%;
+  }
+  footer .bottom .container {
+    width: 960px;
+  }
+}
+@media (max-width: 992px) {
+  footer .container {
+    max-width: 720px;
+  }
+  footer .container .main {
+    flex-direction: column;
+  }
+  footer .container .main .row {
+    width: 100%;
+  }
+  footer .container .main .row .part {
+    width: 50%;
+  }
+  footer .bottom .container {
+    width: 720px;
+  }
+}
+@media (max-width: 768px) {
+  footer .container {
+    max-width: 540px;
+  }
+  footer .container .main {
+    flex-direction: column;
+  }
+  footer .container .main .row {
+    flex-direction: column;
+  }
+  footer .container .main .row .part {
+    width: 100%;
+  }
+  footer .bottom {
+    margin: 0 auto;
+    max-width: 540px;
+    padding: 0 15px;
+  }
+  footer .bottom .row {
+    width: 100%;
+  }
+  footer .bottom .row::before {
+    display: none;
+  }
+  footer .bottom .container {
+    width: 100%;
+  }
+  footer .bottom .container .text {
+    padding: 0 15px;
+    width: 100%;
+  }
+}
 main .hero {
   background-image: url(../../../assets/images/hero-bg.webp);
   background-position: top center;
@@ -888,7 +990,7 @@ main .counter .container .row .right {
   gap: 10px;
 }
 main .counter .container .row .right .block {
-  min-width: 333px;
+  width: 333px;
   align-items: center;
   gap: 20px;
   padding: 10px 20px;
@@ -1125,7 +1227,7 @@ main .testimonials .container .row .right .dots span:hover {
     width: 100%;
   }
   .counter .container .row .right .block {
-    width: 100%;
+    width: 100% !important;
   }
   .testimonials .bg {
     flex-direction: column;
