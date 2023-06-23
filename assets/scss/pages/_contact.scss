@@ -1,0 +1,30 @@
+main{
+    .contact-form{
+        padding: 120px 0 0;
+        .container{
+            .title{
+                margin: 0 0 80px;
+                text-align: center;
+                span{
+                    font-size: 12px;
+                    margin: 0 0 5px;
+                    color: $orange;
+                    letter-spacing: 2px;
+                    font-weight: 600;
+                }
+                h2{
+                    line-height: 1.2;
+                    font-size: 40px;
+                    font-weight: 700;
+                    margin: 0 0 24px;
+                }
+                p{
+                    margin: 0 0 16px;
+                    font-size: 17px;
+                    line-height: 1.8;
+                    color: #999999;
+                }
+            }
+        }
+    }
+}

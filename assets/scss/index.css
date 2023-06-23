@@ -1531,6 +1531,7 @@ main .our-services .container .title h2 {
   margin: 0 0 24px;
 }
 main .our-services .container .row {
+  margin: 0 0 60px;
   gap: 30px;
 }
 main .our-services .container .row .card {
@@ -1622,6 +1623,7 @@ main .our-services .container .row .card .btn a {
     max-width: 540px;
   }
   main .our-services .container .row {
+    margin: 0 0 30px;
     flex-direction: column;
   }
   main .our-services .container .row .card {
@@ -1731,6 +1733,27 @@ main .projects .container .row .card .box p i {
   color: #fc5e28;
   padding: 0 5px 0 0;
 }
+main .projects ul {
+  gap: 5px;
+  margin: 48px 0 0;
+  flex-wrap: wrap;
+}
+main .projects ul li a {
+  color: #040e26;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  transition: 0.2s ease;
+}
+main .projects ul li a:hover {
+  background-color: #040e26;
+  border: 1px solid #040e26;
+  color: #fff;
+}
+main .projects ul li a span {
+  font-size: 17px;
+}
 
 @media (max-width: 1200px) {
   .projects .container {
@@ -1752,4 +1775,30 @@ main .projects .container .row .card .box p i {
   .projects .container .row .card {
     width: 100%;
   }
+}
+main .contact-form {
+  padding: 120px 0 0;
+}
+main .contact-form .container .title {
+  margin: 0 0 80px;
+  text-align: center;
+}
+main .contact-form .container .title span {
+  font-size: 12px;
+  margin: 0 0 5px;
+  color: #fc5e28;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+main .contact-form .container .title h2 {
+  line-height: 1.2;
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0 0 24px;
+}
+main .contact-form .container .title p {
+  margin: 0 0 16px;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #999999;
 }/*# sourceMappingURL=index.css.map */

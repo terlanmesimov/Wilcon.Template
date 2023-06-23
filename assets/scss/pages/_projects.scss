@@ -104,6 +104,29 @@ main{
                 }
             }
         }
+        ul{
+            gap: 5px;
+            margin: 48px 0 0;
+            flex-wrap: wrap;
+            li{
+                a{
+                    color: $dark;
+                    height: 40px;
+                    width: 40px;
+                    border-radius: 50%;
+                    border: 1px solid #ccc;
+                    transition: $hover;
+                    &:hover{
+                        background-color: $dark;
+                        border: 1px solid $dark;
+                        color: #fff;
+                    }
+                    span{
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
     }
 }
 
