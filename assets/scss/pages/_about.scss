@@ -1,4 +1,48 @@
 main{
+    .hero-pages{
+        background: url(../images/bg_2.jpg.webp);
+        background-position: top center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        position: relative;
+        height: 600px;
+        .overlay{
+            background-color: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            .container{
+                z-index: 0;
+                .main{
+                    opacity: 1;
+                    height: 600px;
+                    display: flex;
+                    align-items: flex-end;
+                    .text{
+                        padding: 0 0 48px;
+                        p{
+                            color: #ffffffcc;
+                            margin: 0 0 20px;
+                            a{
+                                color: #ffffffcc;
+                                padding: 0 5px 0 0 ;
+                                transition: $hover;
+                                &:hover{
+                                    color: $orange;
+                                }
+                            }
+                        }
+                        h2{
+                            color: #fff;
+                            font-size: 50px;
+                            margin: 0 0 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
     .blog{
         padding: 120px 0;
         .row{
@@ -260,6 +304,183 @@ main{
     }
 }
 main{
+    .our-team{
+        padding: 120px 0;
+        .container{
+            .title{
+                margin: 0 0 80px;
+                text-align: center;
+                span{
+                    font-size: 12px;
+                    margin: 0 0 5px;
+                    color: $orange;
+                    letter-spacing: 2px;
+                    font-weight: 600;
+                }
+                h2{
+                    line-height: 1.2;
+                    font-size: 40px;
+                    font-weight: 700;
+                    margin: 0 0 24px;
+                }
+            }
+            .main{
+                gap: 30px;
+                .row{
+                    gap: 30px;
+                    .card{
+                        .flip-card{
+                            margin: 0 0 30px;
+                            background: transparent;
+                            width: 100%;
+                            height: 400px;
+                            perspective: 1000px;
+                            &:hover{
+                                .flip-card-inner{
+                                    transform: rotateY(180deg);
+                                }
+                            }
+                            .flip-card-inner{
+                                position: relative;
+                                width: 100%;
+                                height: 100%;
+                                transition: transform 0.3s;
+                                transform-style: preserve-3d;
+                                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+                                .flip-card-front, .flip-card-back {
+                                    position: absolute;
+                                    width: 100%;
+                                    height: 100%;
+                                    backface-visibility: hidden;
+                                }
+                                .flip-card-front{
+                                    background: #90ee90;
+                                    position: relative;
+                                    &::before{
+                                        content: '';
+                                        position: absolute;
+                                        top: 0;
+                                        right: 0;
+                                        bottom: 0;
+                                        left: 0;
+                                        opacity: .7;
+                                        background: 
+                                        linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%,
+                                        rgba(255, 255, 255, 0.15) 38%, 
+                                        rgba(0, 0, 0, 0.4) 100%);
+                                    }
+                                    .box{
+                                        position: absolute;
+                                        left: 20px;
+                                        bottom: 20px;
+                                        right: 20px;
+                                        h2{
+                                            font-size: 20px;
+                                            font-weight: 600;
+                                            color: #fff;
+                                            line-height: 1.5;
+                                        }
+                                        p{
+                                            font-size: 12px;
+                                            line-height: 1.5;
+                                            color: #fff;
+                                        }
+                                    }
+                                }
+                                .flip-card-back{
+                                    position: relative;
+                                    padding: 30px 20px 20px 20px;
+                                    background-color: $orange;
+                                    transform: translateY(-400px) rotateY(180deg);
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-between;
+                                    p{
+                                        text-align: center;
+                                        line-height: 1.8;
+                                        color: #fff;
+                                    }
+                                    .box{
+                                        align-items: center;
+                                        gap: 20px;
+                                        .image{
+                                            width: 40px;
+                                            height: 40px;
+                                            background: url(../images/team-1.jpg.webp);
+                                            background-position: center center;
+                                            background-repeat: no-repeat;
+                                            background-size: cover;
+                                            border-radius: 5px;
+                                        }
+                                        .text{
+                                            display: flex;
+                                            flex-direction: column;
+                                            align-items: flex-start;
+                                            h2{
+                                                font-size: 20px;
+                                                font-weight: 600;
+                                                color: #fff;
+                                                line-height: 1.5;
+                                            }
+                                            p{
+                                                font-size: 12px;
+                                                line-height: 1.5;
+                                                color: #fff;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .card-back{
+                            height: 400px;
+                            padding: 30px 20px 20px 20px;
+                            background-color: $orange;
+                            display: none;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            p{
+                                text-align: center;
+                                line-height: 1.8;
+                                color: #fff;
+                            }
+                            .box{
+                                align-items: center;
+                                gap: 20px;
+                                .image{
+                                    width: 40px;
+                                    height: 40px;
+                                    background: url(../images/team-1.jpg.webp);
+                                    background-position: center center;
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                    border-radius: 5px;
+                                }
+                                .text{
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: flex-start;
+                                    h2{
+                                        font-size: 20px;
+                                        font-weight: 600;
+                                        color: #fff;
+                                        line-height: 1.5;
+                                    }
+                                    p{
+                                        font-size: 12px;
+                                        line-height: 1.5;
+                                        color: #fff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+main{
     .testimonials{
         position: relative;
         height: 100%;
@@ -376,10 +597,12 @@ main{
 }
 
 
-
-
-
 @media ( max-width: 1200px ){
+    .hero-pages{
+        .container{
+            max-width: 960px;
+        }
+    }
     .blog{
         .container{
             max-width: 960px;
@@ -395,6 +618,11 @@ main{
             max-width: 960px;
         }
     }
+    .our-team{
+        .container{
+            max-width: 960px;
+        }
+    }
     .testimonials{
         .container{
             max-width: 960px;
@@ -402,6 +630,11 @@ main{
     }
 }
 @media ( max-width: 992px ){
+    .hero-pages{
+        .container{
+            max-width: 720px;
+        }
+    }
     .blog{
         .container{
             max-width: 720px;
@@ -428,6 +661,25 @@ main{
             max-width: 720px;
         }
     }
+    .our-team{
+        .container{
+            max-width: 720px;
+            .main{
+                margin: 0 0 30px;
+                flex-direction: column;
+                .row{
+                    .card{
+                        .flip-card{
+                            display: none;
+                        }
+                        .card-back{
+                            display: flex !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
     .testimonials{
         .container{
             max-width: 720px;
@@ -435,6 +687,11 @@ main{
     }
 }
 @media ( max-width: 768px ){
+    .hero-pages{
+        .container{
+            max-width: 540px;
+        }
+    }
     .blog{
         .container{
             max-width: 540px;
@@ -486,6 +743,11 @@ main{
             }
         }
     }
+    .our-team{
+        .container{
+            max-width: 540px;
+        }
+    }
     .testimonials{
         .bg{
             flex-direction: column;
@@ -509,6 +771,17 @@ main{
                     width: 100%;
                     background-color: $dark;
                     padding: 24px 15px !important;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 575px){
+    .our-team{
+        .container{
+            .main{
+                .row{
+                    flex-direction: column;
                 }
             }
         }

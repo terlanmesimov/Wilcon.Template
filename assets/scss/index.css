@@ -796,6 +796,50 @@ main .our-blog .container .row .card .box .btn:hover {
     width: 100%;
   }
 }
+main .hero-pages {
+  background: url(../images/bg_2.jpg.webp);
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  height: 600px;
+}
+main .hero-pages .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+main .hero-pages .overlay .container {
+  z-index: 0;
+}
+main .hero-pages .overlay .container .main {
+  opacity: 1;
+  height: 600px;
+  display: flex;
+  align-items: flex-end;
+}
+main .hero-pages .overlay .container .main .text {
+  padding: 0 0 48px;
+}
+main .hero-pages .overlay .container .main .text p {
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0 0 20px;
+}
+main .hero-pages .overlay .container .main .text p a {
+  color: rgba(255, 255, 255, 0.8);
+  padding: 0 5px 0 0;
+  transition: 0.2s ease;
+}
+main .hero-pages .overlay .container .main .text p a:hover {
+  color: #fc5e28;
+}
+main .hero-pages .overlay .container .main .text h2 {
+  color: #fff;
+  font-size: 50px;
+  margin: 0 0 16px;
+}
 main .blog {
   padding: 120px 0;
 }
@@ -1040,6 +1084,173 @@ main .counter .container .row .right .two div .bottom {
   letter-spacing: 1px;
 }
 
+main .our-team {
+  padding: 120px 0;
+}
+main .our-team .container .title {
+  margin: 0 0 80px;
+  text-align: center;
+}
+main .our-team .container .title span {
+  font-size: 12px;
+  margin: 0 0 5px;
+  color: #fc5e28;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+main .our-team .container .title h2 {
+  line-height: 1.2;
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0 0 24px;
+}
+main .our-team .container .main {
+  gap: 30px;
+}
+main .our-team .container .main .row {
+  gap: 30px;
+}
+main .our-team .container .main .row .card .flip-card {
+  margin: 0 0 30px;
+  background: transparent;
+  width: 100%;
+  height: 400px;
+  perspective: 1000px;
+}
+main .our-team .container .main .row .card .flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+main .our-team .container .main .row .card .flip-card .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+main .our-team .container .main .row .card .flip-card .flip-card-inner .flip-card-front, main .our-team .container .main .row .card .flip-card .flip-card-inner .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+main .our-team .container .main .row .card .flip-card .flip-card-inner .flip-card-front {
+  background: #90ee90;
+  position: relative;
+}
+main .our-team .container .main .row .card .flip-card .flip-card-inner .flip-card-front::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.7;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.15) 38%, rgba(0, 0, 0, 0.4) 100%);
+}
+main .our-team .container .main .row .card .flip-card .flip-card-inner .flip-card-front .box {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  right: 20px;
+}
+main .our-team .container .main .row .card .flip-card .flip-card-inner .flip-card-front .box h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.5;
+}
+main .our-team .container .main .row .card .flip-card .flip-card-inner .flip-card-front .box p {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #fff;
+}
+main .our-team .container .main .row .card .flip-card .flip-card-inner .flip-card-back {
+  position: relative;
+  padding: 30px 20px 20px 20px;
+  background-color: #fc5e28;
+  transform: translateY(-400px) rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .our-team .container .main .row .card .flip-card .flip-card-inner .flip-card-back p {
+  text-align: center;
+  line-height: 1.8;
+  color: #fff;
+}
+main .our-team .container .main .row .card .flip-card .flip-card-inner .flip-card-back .box {
+  align-items: center;
+  gap: 20px;
+}
+main .our-team .container .main .row .card .flip-card .flip-card-inner .flip-card-back .box .image {
+  width: 40px;
+  height: 40px;
+  background: url(../images/team-1.jpg.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+}
+main .our-team .container .main .row .card .flip-card .flip-card-inner .flip-card-back .box .text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+main .our-team .container .main .row .card .flip-card .flip-card-inner .flip-card-back .box .text h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.5;
+}
+main .our-team .container .main .row .card .flip-card .flip-card-inner .flip-card-back .box .text p {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #fff;
+}
+main .our-team .container .main .row .card .card-back {
+  height: 400px;
+  padding: 30px 20px 20px 20px;
+  background-color: #fc5e28;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .our-team .container .main .row .card .card-back p {
+  text-align: center;
+  line-height: 1.8;
+  color: #fff;
+}
+main .our-team .container .main .row .card .card-back .box {
+  align-items: center;
+  gap: 20px;
+}
+main .our-team .container .main .row .card .card-back .box .image {
+  width: 40px;
+  height: 40px;
+  background: url(../images/team-1.jpg.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+}
+main .our-team .container .main .row .card .card-back .box .text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+main .our-team .container .main .row .card .card-back .box .text h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.5;
+}
+main .our-team .container .main .row .card .card-back .box .text p {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #fff;
+}
+
 main .testimonials {
   position: relative;
   height: 100%;
@@ -1149,6 +1360,9 @@ main .testimonials .container .row .right .dots span:hover {
 }
 
 @media (max-width: 1200px) {
+  .hero-pages .container {
+    max-width: 960px;
+  }
   .blog .container {
     max-width: 960px;
   }
@@ -1158,11 +1372,17 @@ main .testimonials .container .row .right .dots span:hover {
   .counter .container {
     max-width: 960px;
   }
+  .our-team .container {
+    max-width: 960px;
+  }
   .testimonials .container {
     max-width: 960px;
   }
 }
 @media (max-width: 992px) {
+  .hero-pages .container {
+    max-width: 720px;
+  }
   .blog .container {
     max-width: 720px;
   }
@@ -1181,11 +1401,27 @@ main .testimonials .container .row .right .dots span:hover {
   .counter .container {
     max-width: 720px;
   }
+  .our-team .container {
+    max-width: 720px;
+  }
+  .our-team .container .main {
+    margin: 0 0 30px;
+    flex-direction: column;
+  }
+  .our-team .container .main .row .card .flip-card {
+    display: none;
+  }
+  .our-team .container .main .row .card .card-back {
+    display: flex !important;
+  }
   .testimonials .container {
     max-width: 720px;
   }
 }
 @media (max-width: 768px) {
+  .hero-pages .container {
+    max-width: 540px;
+  }
   .blog .container {
     max-width: 540px;
   }
@@ -1229,6 +1465,9 @@ main .testimonials .container .row .right .dots span:hover {
   .counter .container .row .right .block {
     width: 100% !important;
   }
+  .our-team .container {
+    max-width: 540px;
+  }
   .testimonials .bg {
     flex-direction: column;
   }
@@ -1253,6 +1492,11 @@ main .testimonials .container .row .right .dots span:hover {
     width: 100%;
     background-color: #040e26;
     padding: 24px 15px !important;
+  }
+}
+@media (max-width: 575px) {
+  .our-team .container .main .row {
+    flex-direction: column;
   }
 }
 main .our-services {
