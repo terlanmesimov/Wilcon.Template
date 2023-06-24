@@ -1801,4 +1801,222 @@ main .contact-form .container .title p {
   font-size: 17px;
   line-height: 1.8;
   color: #999999;
+}
+main .contact-form .container .main .row {
+  gap: 30px;
+}
+main .contact-form .container .main .row .form form {
+  padding: 48px;
+  background: #f8f9fa;
+}
+main .contact-form .container .main .row .form form div {
+  margin: 0 0 16px;
+  gap: 30px;
+}
+main .contact-form .container .main .row .form form div input {
+  height: 52px;
+  width: 50%;
+  padding: 10px 20px;
+  outline: none;
+  background: #fff;
+  border: none;
+}
+main .contact-form .container .main .row .form form .subject {
+  height: 52px;
+  width: 100%;
+  padding: 10px 20px;
+  outline: none;
+  background: #fff;
+  border: none;
+  margin: 0 0 16px;
+}
+main .contact-form .container .main .row .form form textarea {
+  width: 100%;
+  padding: 10px 20px;
+  outline: none;
+  background: #fff;
+  border: none;
+  resize: none;
+  margin: 0 0 16px;
+}
+main .contact-form .container .main .row .form form button {
+  padding: 16px 48px;
+  background-color: #fc5e28;
+  outline: none;
+  border: 1px solid #fc5e28;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+main .contact-form .container .main .row .form form button:hover {
+  background: transparent;
+  color: #fc5e28;
+}
+main .contact-form .container .main .row .contact-area {
+  flex-direction: column;
+}
+main .contact-form .container .main .row .contact-area .box {
+  display: flex;
+  height: 25%;
+}
+main .contact-form .container .main .row .contact-area .box .icon {
+  background: rgba(0, 0, 0, 0.0509803922);
+  height: 50px;
+  min-width: 50px;
+}
+main .contact-form .container .main .row .contact-area .box .icon i {
+  color: #fc5e28;
+  font-size: 20px;
+}
+main .contact-form .container .main .row .contact-area .box .text {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 15px;
+}
+main .contact-form .container .main .row .contact-area .box .text span {
+  font-weight: 500;
+  font-size: 17px;
+}
+main .contact-form .container .main .row .contact-area .box .text p {
+  color: #999999;
+  line-height: 1.8;
+  font-size: 17px;
+}
+main .contact-form .container .main .row .contact-area .box .text a {
+  color: #fc5e28;
+  line-height: 1.8;
+  font-size: 17px;
+}
+main .contact-form .container .main .map {
+  width: 100%;
+}
+main .contact-form .container .main .map iframe {
+  height: 600px;
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .contact-form .container {
+    max-width: 960px;
+  }
+}
+@media (max-width: 992px) {
+  .contact-form .container {
+    max-width: 720px;
+  }
+}
+@media (max-width: 768px) {
+  .contact-form .container {
+    max-width: 540px;
+  }
+  .contact-form .container .main .row {
+    flex-direction: column;
+  }
+  .contact-form .container .main .row .form {
+    width: 100%;
+  }
+  .contact-form .container .main .row .form form {
+    padding: 24px !important;
+  }
+  .contact-form .container .main .row .form form div {
+    flex-direction: column;
+    gap: 16px !important;
+  }
+  .contact-form .container .main .row .form form div input {
+    width: 100% !important;
+  }
+  .contact-form .container .main .row .form button {
+    width: 100%;
+  }
+  .contact-form .container .main .row .contact-area {
+    width: 100%;
+  }
+  .contact-form .container .main .row .contact-area .box {
+    margin: 0 0 30px;
+  }
+}
+.registration {
+  background: url(../images/hero-bg.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+}
+.registration .overlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(4, 14, 38, 0.8);
+}
+.registration .overlay .main {
+  position: relative;
+  position: relative;
+  border-radius: 5px;
+  padding: 48px;
+  margin: 15px;
+  background: #fff;
+}
+.registration .overlay .main .icon {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+.registration .overlay .main .icon a {
+  display: block;
+  padding: 8px 10px;
+  border-radius: 5px;
+  transition: 0.5s ease-out;
+}
+.registration .overlay .main .icon a:hover {
+  background: #d1cece;
+}
+.registration .overlay .main .icon a i {
+  color: #fc5e28;
+}
+.registration .overlay .main form {
+  width: 350px;
+}
+.registration .overlay .main form h3 {
+  font-size: 28px;
+  margin: 0 0 8px;
+  font-weight: 400;
+}
+.registration .overlay .main form textarea,
+.registration .overlay .main form select,
+.registration .overlay .main form input {
+  border: none;
+  outline: none;
+  background: rgba(0, 0, 0, 0.0509803922);
+  height: 54px;
+  border-radius: 5px;
+  padding: 6px 15px;
+  margin: 0 0 16px;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  font-weight: 500;
+  width: 100%;
+}
+.registration .overlay .main form textarea {
+  resize: none;
+  height: 100px;
+}
+.registration .overlay .main form button {
+  width: 100%;
+  padding: 16px 48px;
+  background-color: #fc5e28;
+  outline: none;
+  border: 1px solid #fc5e28;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.registration .overlay .main form button:hover {
+  background: transparent;
+  color: #fc5e28;
 }/*# sourceMappingURL=index.css.map */

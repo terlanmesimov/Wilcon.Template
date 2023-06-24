@@ -25,6 +25,154 @@ main{
                     color: #999999;
                 }
             }
+            .main{
+                .row{
+                    gap: 30px;
+                    .form{
+                        form{
+                            padding: 48px;
+                            background: #f8f9fa;
+                            div{
+                                margin: 0 0 16px;
+                                gap: 30px;
+                                input{
+                                    height: 52px;
+                                    width: 50%;
+                                    padding: 10px 20px;
+                                    outline: none;
+                                    background: #fff;
+                                    border: none;
+                                }
+                            }
+                            .subject{
+                                height: 52px;
+                                width: 100%;
+                                padding: 10px 20px;
+                                outline: none;
+                                background: #fff;
+                                border: none;
+                                margin: 0 0 16px;
+                            }
+                            textarea{
+                                width: 100%;
+                                padding: 10px 20px;
+                                outline: none;
+                                background: #fff;
+                                border: none;
+                                resize: none;
+                                margin: 0 0 16px;
+                            }
+                            button{
+                                padding: 16px 48px;
+                                background-color: $orange;
+                                outline: none;
+                                border: 1px solid $orange;
+                                font-size: 14px;
+                                font-weight: 600;
+                                color: #fff;
+                                border-radius: 5px;
+                                cursor: pointer;
+                                transition: $hover;
+                                &:hover{
+                                    background: transparent;
+                                    color: $orange;
+                                }
+                            }
+                        }
+                    }
+                    .contact-area{
+                        flex-direction: column;
+                        .box{
+                            display: flex;
+                            height: 25%;
+                            .icon{
+                                background: #0000000d;
+                                height: 50px;
+                                min-width: 50px;
+                                i{
+                                    color: $orange;
+                                    font-size: 20px;
+                                }
+                            }
+                            .text{
+                                display: flex;
+                                flex-direction: column;
+                                padding: 0 0 0 15px;
+                                span{
+                                    font-weight: 500;
+                                    font-size: 17px;
+                                }
+                                p{
+                                    color: #999999;
+                                    line-height: 1.8;
+                                    font-size: 17px;
+                                }
+                                a{
+                                    color: $orange;
+                                    line-height: 1.8;
+                                    font-size: 17px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .map{
+                    width: 100%;
+                    iframe{
+                        height: 600px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1200px){
+    .contact-form{
+        .container{
+            max-width: 960px;
+        }
+    }
+}
+@media (max-width:992px){
+    .contact-form{
+        .container{
+            max-width: 720px;
+        }
+    }
+}
+@media (max-width:768px){
+    .contact-form{
+        .container{
+            max-width: 540px;
+            .main{
+                .row{
+                    flex-direction: column;
+                    .form{
+                        width: 100%;
+                        form{
+                            padding: 24px !important;
+                            div{
+                                flex-direction: column;
+                                gap: 16px !important;
+                                input{
+                                    width: 100%  !important;
+                                }
+                            }
+                        }
+                        button{
+                            width: 100%;
+                        }
+                    }
+                    .contact-area{
+                        width: 100%;
+                        .box{
+                            margin: 0 0 30px;
+                        }
+                    }
+                }
+            }
         }
     }
 }

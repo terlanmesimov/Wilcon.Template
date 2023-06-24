@@ -4,10 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- icon -->
     <link rel="stylesheet" href="./assets/scss/index.css">
-    <title>Document</title>
+    <title>Wilcon</title>
 </head>
 <body>
+    <section class="registration">
+        <div class="overlay center">
+            <div class="main">
+                <div class="icon">
+                    <a href="./index.html">
+                        <i class="fa fa-close"></i>
+                    </a>
+                </div>
+                <form action="#">
+                    <h3>Request Qoute</h3>
+                    <input type="text" placeholder="First Name" required><br>
+                    <input type="text" placeholder="Last Name" required><br>
+                    <input type="tel" placeholder="Phone" required>
+                    <select name="" id="" required>
+                        <option value="">
+                            Select Your Services
+                        </option>
+                        <option value="2">
+                            Architecture
+                        </option>
+                        <option value="3">
+                            Renovation
+                        </option>
+                        <option value="4">
+                            Construction
+                        </option>
+                        <option value="5">
+                            Interior & Exterior
+                        </option>
+                        <option value="6">
+                            Chemical Research
+                        </option>
+                        <option value="7">
+                            Petroleum & Gas
+                        </option>
+                        <option value="8">
+                            Other Services
+                        </option>
+                    </select>
+                    <textarea name="" id="" cols="30" rows="4" placeholder="Message" required></textarea>
+                    <button>REQUEST A QOUTE</button>
+                </form>
+            </div>
+        </div>
+    </section>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
